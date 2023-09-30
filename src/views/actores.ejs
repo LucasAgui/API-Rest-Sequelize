@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="es">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>ActricesyActores</title>
+	</head>
+	<body>
+		<h1>Actrices y Actores</h1>
+
+		<% if (actores.length > 0) { %>
+		<table border="1">
+			<thead>
+				<tr>
+					<th>ID</th>
+					<th>Nombre</th>
+				</tr>
+			</thead>
+			<tbody>
+				<% actores.forEach(item => { %>
+				<tr>
+					<td><%= item.idActrizActor %></td>
+					<td><%= item.nombreActrizActor %></td>
+				</tr>
+				<% }); %>
+			</tbody>
+		</table>
+		<% } else { %>
+		<p>No se encontraron datos de los actrices y actores.</p>
+		<% } %>
+	</body>
+</html>

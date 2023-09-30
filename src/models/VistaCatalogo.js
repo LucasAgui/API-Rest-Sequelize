@@ -38,7 +38,8 @@ const vistacatalogo = sequelize.define(
 	{
 		tableName: 'vistacatalogo',
 		timestamps: false,
-		freezeTableName: true
+		freezeTableName: true,
+		raw: true
 	}
 );
 

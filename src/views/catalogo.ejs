@@ -31,8 +31,12 @@
 					<td><%= item.categoria %></td>
 					<td><%= item.generos %></td>
 					<td><%= item.resumen %></td>
-					<td><%= item.temporadas %></td>
-					<td><%= item.trailer %></td>
+					<td><%= item.temporadas || "N/A" %></td>
+					<td>
+						<a href="<%= item.trailer || '#' %>" target="_blank">
+							<%= item.trailer || "N/A" %>
+						</a>
+					</td>
 				</tr>
 				<% }); %>
 			</tbody>

@@ -27,7 +27,11 @@ PORT=3008
 
 ![Importar datos](./src/media/import-section.png)
 
-### 1.5 Presiona en Start Import:
+### 1.5 Selecciona la base de datos creada:
+
+![Importar datos](./src/media/selecciona-base.png)
+
+### 1.6 Presiona en Start Import:
 
 ![Botón start import](./src/media/start-import.png)
 

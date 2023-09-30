@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="es">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Categorias</title>
+	</head>
+	<body>
+		<h1>Categorias</h1>
+
+		<% if (categorias.length > 0) { %>
+		<table border="1">
+			<thead>
+				<tr>
+					<th>ID</th>
+					<th>Nombre</th>
+				</tr>
+			</thead>
+			<tbody>
+				<% categorias.forEach(item => { %>
+				<tr>
+					<td><%= item.idCategoria %></td>
+					<td><%= item.nombreCategoria %></td>
+				</tr>
+				<% }); %>
+			</tbody>
+		</table>
+		<% } else { %>
+		<p>No se encontraron datos de las categorias.</p>
+		<% } %>
+	</body>
+</html>

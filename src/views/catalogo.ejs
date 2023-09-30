@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="es">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Catalogo</title>
+	</head>
+	<body>
+		<h1>Catalogo</h1>
+
+		<% if (catalogo.length > 0) { %>
+		<table border="1">
+			<thead>
+				<tr>
+					<th>idCatalogo</th>
+					<th>Poster</th>
+					<th>Titulo</th>
+					<th>Categoria</th>
+					<th>Generos</th>
+					<th>Resumen</th>
+					<th>Temporadas</th>
+					<th>Trailer</th>
+				</tr>
+			</thead>
+			<tbody>
+				<% catalogo.forEach(item => { %>
+				<tr>
+					<td><%= item.idCatalogo %></td>
+					<td><%= item.poster %></td>
+					<td><%= item.titulo %></td>
+					<td><%= item.categoria %></td>
+					<td><%= item.generos %></td>
+					<td><%= item.resumen %></td>
+					<td><%= item.temporadas %></td>
+					<td><%= item.trailer %></td>
+				</tr>
+				<% }); %>
+			</tbody>
+		</table>
+		<% } else { %>
+		<p>No se encontraron datos en el catálogo.</p>
+		<% } %>
+	</body>
+</html>

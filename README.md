@@ -2,17 +2,15 @@
 
 ## 1. Configuración del Entorno
 
-El proyecto utiliza variables de entorno mediante el paquete `dotenv`. Asegúrate de tener un archivo `.env` en la raíz del proyecto con las configuraciones necesarias.
+## El proyecto utiliza variables de entorno mediante el paquete `dotenv`. Asegúrate de **MODIFICAR** el archivo .env con las configuraciones necesarias.
 
 ```dotenv
-DB_USERNAME=your_username
-DB_PASSWORD=your_password
-DB_DATABASE=your_database
-DB_HOST=your_host
-DB_PORT=your_port
+DBUSER=TU_USUARIO
+PASSWORD=TU_CONTRASEÑA
+DATABASE=EL_NOMBRE_DE_LA_BASE_DE_DATOS_CREADA_Y_CON_LOS_DATOS_IMPORTADOS
 
-PORT=3000
 HOST=localhost
+PORT=3008
 ```
 
 ### 1.1 También asegurate de importar los datos de la base de datos desde el archivo trailerflix.sql adjunto en el proyecto. Para ello:

@@ -4,9 +4,6 @@ node_modules/
 # Archivos generados por npm
 package-lock.json
 
-# Ambiente de desarrollo
-.env
-
 # Logs y archivos temporales
 logs/
 *.log
